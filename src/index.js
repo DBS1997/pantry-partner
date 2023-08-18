@@ -633,12 +633,14 @@ const collapsibles = document.getElementsByClassName('collapsible')
     })
 }}
 
+//change the focus color to green instead of blue cause sometimes we need to hit our MVP
 const textInputs = document.querySelectorAll('input[type="text"]')
 textInputs.forEach((inputField)=>{
+    inputField.className="blurred"
     inputField.addEventListener('focus', function(){
         inputField.className="focused"
     })
     inputField.addEventListener('blur', function(){
-        inputField.className=""
+        inputField.className="blurred"
     })
 })

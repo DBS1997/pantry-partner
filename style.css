@@ -126,6 +126,9 @@ input[type="submit"]{
     background-color: #336666;
     color: #f0ead6;
 }
+input[type="text"]:not(.focused){
+border: none;
+}
 .focused{
-    background-color: #deefef;
+outline:#336666;
 }
