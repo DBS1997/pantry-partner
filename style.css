@@ -1,0 +1,131 @@
+body{
+    background-color: #336666;
+    color: #f0ead6;
+    text-align: center;
+}
+.collapsible{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #f0ead6;
+    padding: 18px;
+    outline: none;
+    border-color: #f0ead6;
+    border-width: 0.5px;
+    transition: 0.4s ease-out;
+}
+.collapsible:hover{
+    color: #dccd9e;
+    padding: 24px;
+}
+.content{
+    display: block;
+    background-color : #f0ead6;
+    color: black;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    text-align: left;
+}
+h1{
+    text-align: center;
+    text-decoration: underline double;
+}
+#makeNow{
+    padding: 24px;
+    background-color: #f0ead6;
+    color: black;
+}
+#makeNow:hover{
+    background-color: #dccd9e;
+}
+#makeNowWrapper{
+    transition: max-height 0.2s;
+    overflow: hidden;
+}
+.newRecipeForm{
+    max-height: 0;
+    overflow: hidden;
+    display: none;
+}
+h4{
+    font-size: 34px;
+    text-decoration: underline;
+    text-align: center;
+}
+h5{
+    font-size: 22px;
+}
+.recipeCollapsible{
+    width: 50%;
+    text-align: center;
+    background-color: #ddd6f0;
+    color: black;
+    padding: 18px;
+    outline: none;
+    border: none;
+    font-size: 34;
+    margin-top: 8px;
+    transition: .3s;
+}
+.recipeCollapsible:hover{
+    background-color: #af9edc;
+}
+.recipeContent{
+    display: block;
+    background-color : #f0ead6;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: left;
+    margin-left: 25%;
+}
+#recipeBook{
+    text-align: center;
+}
+#pantryList{
+    columns: 2;
+}
+.pantryUpdateForm{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+.displayedRecipe{
+    display: block;
+    background-color : #f0ead6;
+    text-align: left;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+.displayedRecipeContent{
+    padding-left: 25%;
+}
+.displayedRecipeButton{
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+button{
+    background-color: #336666;
+    color: #f0ead6;
+}
+button:not(.outerButton):not(.recipeCollapsible):hover{
+    color: #dccd9e;
+}
+.outerButton{
+    background-color: #f0ead6;
+    color: black;
+}
+.outerButton:hover{
+    background-color: #dccd9e;  
+}
+input[type="submit"]{
+    background-color: #336666;
+    color: #f0ead6;
+}
+.focused{
+    background-color: #deefef;
+}

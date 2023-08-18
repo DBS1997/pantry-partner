@@ -1,0 +1,22 @@
+body{
+    background-color: #336666;
+    color: #f0ead6;
+}
+.collapsible{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #f0ead6;
+    padding: 24px;
+    outline: none;
+    border: none
+}
+.content{
+    padding: 0 18px;
+    display: none;
+    background-color : #f0ead6;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}

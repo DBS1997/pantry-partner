@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+        <link rel="stylesheet" href="style.css">
+        <script defer src="src/index.js"></script>
+    
+
+        <title>Pantry Partner</title>
+    </head>
+    <body>
+        <h1>Pantry Partner</h1>
+        <!-- what can i make right now -->
+        <div id ="makeNowWrapper">
+            <button id="makeNow">What Can I Make Right Now?</button>
+            <div id="makeNowResults"></div>
+        </div>
+        <br>
+        <div id="displayArea"></div>
+        <!--- view your pantry --->
+        <button id='pantryTitle' class="collapsible">View Your Pantry</button>
+        <div id="pantryDisplay" class="content">
+            <ul id="pantryList"></ul>
+        </div>
+        <!--- view your recipes --->
+        <button id='recipeBookTitle' class="collapsible">View Your Recipes</button>
+        <div id="recipeBook" class="content"></div>
+        <!-- search by ingredient-->
+        <button class="collapsible">Search Recipes by Ingredient</button>
+        <div class="content" id="searchByIngredientWrapper">
+            <form id="searchByIngredientForm">
+                <label for="ingredient">Ingredient:</label>
+                <input type="text" id="searchByIngrInput" name="ingredient">
+
+                <input type="submit" value="Find Recipes">
+            </form>
+            <ul id="resultsList"></ul>
+            <p id="sadMessage"></p>
+        </div>
+        <!-- Add New Pantry Items -->
+        <button class="collapsible">Add a New Item to your Pantry</button>
+        <div class="content" id="logNewPantryWrapper">
+            <form id="newPantry">
+                <label for="name">New Item:</label>
+                <input type="text" id="newItemName" name="name">
+
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="newItemQuantity" name="quantity">
+
+                <label for="unit">Unit (singular):</label>
+                <input type="text" id="newItemUnit" name="unit">
+
+                <input type="submit" value="Add New Item">
+            </form>
+        </div> 
+        <!-- Add New Recipes -->
+        <button class="collapsible">Add A New Recipe</button>
+        <div id="newRecipeWrapper" class="content">
+            <form id="initializeNewRecipe">
+                <label for="name">Recipe Name:</label>
+                <input type="text" name="name">
+                <input type="submit" value="Create a New Recipe">
+            </form>
+            <h3 class="newRecipeForm" id="addIngredientsTitle">Add Ingredients:</h3>
+            <form class="newRecipeForm" id="newRecipeIngredientForm">
+                <label for="ingredient">Ingredient:</label>
+                <input type="text" id="newRecipeIngredient" name="ingredient">
+
+                <label for="quanity">Quantity:</label>
+                <input type="text" id="newRecipeQuantity" name="quantity">
+
+                <label for="unit">Unit (singular):</label>
+                <input type="text" id="newRecipeUnit" name="unit">
+                <input type="submit" value="Add Ingredient">
+            </form>
+            <h3 class="newRecipeForm" id="addStepsTitle">Add Steps:</h3>
+            <form class="newRecipeForm" id="newRecipeStepForm">
+                <label for="step">Step:</label>
+                <input type="text" id="newRecipeStep" name="step">
+                <input type="submit" value="Add Step">
+            </form>
+            <div id="newRecipeZone"></div>
+            <button id="finalizeRecipe" class="newRecipeForm">Finalize Recipe</button>
+        </div>
+    </body>
+</html>

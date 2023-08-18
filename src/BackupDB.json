@@ -1,0 +1,213 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Grilled Cheese",
+      "ingredients": [
+        {
+          "name": "bread",
+          "quantity": 2,
+          "unit": "slice"
+        },
+        {
+          "name": "cheese",
+          "quantity": 0.2,
+          "unit": "block"
+        },
+        {
+          "name": "butter",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Melt butter in pan on medium low",
+        "Place bread in pan and put cheese on top. Cover and fry until cheese is melted",
+        "Close the sandwich and finish off on both sides"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Box Mac and Cheese",
+      "ingredients": [
+        {
+          "name": "milk",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "name": "mac and cheese",
+          "quantity": 1,
+          "unit": "box"
+        },
+        {
+          "name": "butter",
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Follow the instructions on the box, silly!"
+      ]
+    },
+    {
+      "name": "Fried Eggs",
+      "ingredients": [
+        {
+          "name": "egg",
+          "quantity": 2,
+          "unit": ""
+        },
+        {
+          "name": "salt",
+          "quantity": 5000,
+          "unit": ""
+        },
+        {
+          "name": "pepper",
+          "quantity": 5000,
+          "unit": ""
+        },
+        {
+          "name": "butter",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Melt butter in a pan over a medium-high heat",
+        "Crack eggs into the pan and cook until they are the desired level of runny",
+        "Salt and pepper to taste"
+      ],
+      "id": 3
+    },
+    {
+      "name": "Microwave Oatmeal",
+      "ingredients": [
+        {
+          "name": "oat",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "water",
+          "quantity": 2,
+          "unit": "cup"
+        },
+        {
+          "name": "salt",
+          "quantity": 5000,
+          "unit": ""
+        },
+        {
+          "name": "raisin",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "milk",
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Add oats, water, salt, and raisins to a bowl",
+        "Microwave for three minutes",
+        "add a splash of milk and mix in"
+      ],
+      "id": 4
+    }
+  ],
+  "pantryItems": [
+    {
+      "id": 1,
+      "name": "cheese",
+      "quantity": 1,
+      "unit": "block"
+    },
+    {
+      "id": 2,
+      "name": "bread",
+      "quantity": 12,
+      "unit": "slice"
+    },
+    {
+      "id": 3,
+      "name": "butter",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "name": "chicken leg",
+      "quantity": 3,
+      "unit": "",
+      "id": 4
+    },
+    {
+      "name": "oregano",
+      "quantity": "Infinity",
+      "unit": "",
+      "id": 5
+    },
+    {
+      "name": "milk",
+      "quantity": 1,
+      "unit": "gallon",
+      "id": 6
+    },
+    {
+      "name": "steak",
+      "quantity": 3,
+      "unit": "",
+      "id": 7
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "cup",
+      "id": 8
+    },
+    {
+      "name": "pepper",
+      "quantity": "Infinity",
+      "unit": "",
+      "id": 9
+    },
+    {
+      "name": "salt",
+      "quantity": "Infinity",
+      "unit": "",
+      "id": 10
+    },
+    {
+      "name": "cumin",
+      "quantity": "Infinity",
+      "unit": "",
+      "id": 11
+    },
+    {
+      "name": "bell pepper",
+      "quantity": 2,
+      "unit": "",
+      "id": 12
+    },
+    {
+      "name": "ginger",
+      "quantity": "Infinity",
+      "unit": "",
+      "id": 13
+    },
+    {
+      "name": "bread crumbs",
+      "quantity": 3,
+      "unit": "cup",
+      "id": 14
+    },
+    {
+      "name": "egg",
+      "quantity": 12,
+      "unit": "",
+      "id": 15
+    }
+  ]
+}
