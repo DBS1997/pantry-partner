@@ -23,15 +23,8 @@ Recipes
 both will be populated primarily (maybe entirely) by the user
 
 
-Presentation Notes:
-Things maybe worth highlighting:
-Recipes being complicated data structures
-The Flexibility of the make recipe form(s)
-The challenge of quantity and the difficulty of adding a feature
-Recursive event listener for the okay button
-English function
 
-
+Presentation notes
 3 things to pre highlight in presentation 
 scroll animations done by manually adding pixels, no css grid or flexboxes (because i didn't know about them)
     -there are some small artifacts that you can see because of this

@@ -1,8 +1,6 @@
-//Helper Equations that aren't actually used directly in the functionality of the website
-
+//Helper Equations that are mostly called in the "actual functionality" part of the code
 //Generate ingredient with measurement in normal english speach
 //(ingredient or pantry item, quantity) => relatively normal english way of saying that amount of things
-//I still need a better solution for oregano, salt pepper etc
 function english(itemObj, quantity){
     if(quantity > 4999){
         return itemObj.name
@@ -286,6 +284,7 @@ function loadPantry(){
     })
 }
 
+
 //Display pantry function
 const pantryList = document.getElementById('pantryList')
 const pantryDisplay = document.getElementById('pantryDisplay')
@@ -421,6 +420,9 @@ function loadRecipes(){
 fetch('http://localhost:3000/recipes')
 .then(r=>r.json())
 .then(recipes=>{
+    while (recipeBook.firstChild){
+        recipeBook.removeChild(recipeBook.firstChild)
+    }
     for (recipe of recipes){
         recipeBook.appendChild(renderRecipe(recipe))
     }
@@ -450,10 +452,8 @@ searchByIngredient.addEventListener('submit', (e)=>{
             resultsList.removeChild(resultsList.firstChild)
         }
         const searchWrapper = document.getElementById('searchByIngredientWrapper')
-        console.log(searchReturn)
         for (result of searchReturn){
             const resultItem = document.createElement('li')
-
             resultItem.textContent = result
             resultsList.appendChild(resultItem)
         }
@@ -549,6 +549,7 @@ initRecipe.addEventListener('submit', (e)=>{
             setTimeout(()=>{confirmation.style.display = 'none'}, 2000)
             newRecipe = {}
             finalizeRecipe.style.display = 'none'
+            loadRecipes()
         })
     })
     printNewRecipe()
@@ -632,10 +633,8 @@ const collapsibles = document.getElementsByClassName('collapsible')
         }
     })
 }}
-
 //change the focus color to green instead of blue cause sometimes we need to hit our MVP
-const textInputs = document.querySelectorAll('input[type="text"]')
-textInputs.forEach((inputField)=>{
+const greenInput = (inputField)=>{
     inputField.className="blurred"
     inputField.addEventListener('focus', function(){
         inputField.className="focused"
@@ -643,4 +642,7 @@ textInputs.forEach((inputField)=>{
     inputField.addEventListener('blur', function(){
         inputField.className="blurred"
     })
-})
+}
+
+const textInputs = document.querySelectorAll('input[type="text"]')
+textInputs.forEach(greenInput)
