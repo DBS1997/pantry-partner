@@ -130,5 +130,5 @@ input[type="text"]:not(.focused){
 border: none;
 }
 .focused{
-outline:#336666;
+outline-color: #336666;
 }
