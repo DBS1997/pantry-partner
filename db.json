@@ -157,7 +157,7 @@
     },
     {
       "name": "steak",
-      "quantity": 3,
+      "quantity": "3",
       "unit": "",
       "id": 7
     },
